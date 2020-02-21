@@ -103,7 +103,7 @@ if opc == 1:
     i = float(input("Taxa: "))
     med_entrada = str(input("a - ao ano\nm - ao mes\nd - ao dia\nOpcao: "))
     t = float(input("Periodo: "))
-    med_saida = str(input("a - ao ano\nm - ao mes\nd - ao dia\nOpcao: "))
+    med_saida = str(input("a - anos\nm - meses\nd - dias\nOpcao: "))
     
     i = convert_taxa(i, med_entrada, med_saida)
     """
@@ -127,7 +127,7 @@ if opc == 2:
     i = float(input("Taxa: "))
     med_entrada = str(input("a - ao ano\nm - ao mes\nd - ao dia\nOpcao: "))
     t = float(input("Periodo: "))
-    med_saida = str(input("a - ao ano\nm - ao mes\nd - ao dia\nOpcao: "))
+    med_saida = str(input("a - anos\nm - meses\nd - dias\nOpcao: "))
     
     i = convert_taxa(i, med_entrada, med_saida)
     """
@@ -186,7 +186,7 @@ if opc == 5:
     i = float(input("Taxa: "))
     med_entrada = str(input("a - ano\nm - mes\nd - dia\nOpcao: "))
     t = float(input("Periodo: "))
-    med_saida = str(input("a - ano\nm - mes\nd - dia\nOpcao: "))
+    med_saida = str(input("a - anos\nm - meses\nd - dias\nOpcao: "))
 
     tax_convert = 100 * (math.pow(1 + convert_taxa(i, med_entrada, med_saida)/100, t) - 1)
     """
